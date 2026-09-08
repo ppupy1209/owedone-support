@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="See how OweDone splits shared expenses exactly and shows who pays whom. Worked examples in English and Korean.">
+  <title>Split shared expenses exactly · OweDone Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="OweDone support home">OweDone</a>
+    <nav aria-label="Support navigation">
+      <a href="index.html">Support</a>
+      <a aria-current="page" href="expense-split-guide.html">Split guide</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero--document" aria-labelledby="guide-title">
+      <p class="kicker">SHARED EXPENSES / 01</p>
+      <h1 id="guide-title">Three people. Every cent explained.</h1>
+      <p class="lede">From one shared expense to a clear plan for who pays whom, with OweDone’s on-device ledger.</p>
+      <p class="language-links"><a href="#english">English example</a> · <a href="#korean" lang="ko">한국어 예시</a></p>
+    </section>
+
+    <article class="document guide-copy" id="english" lang="en" aria-labelledby="english-title">
+      <p class="kicker">EXAMPLE / USD</p>
+      <h2 id="english-title">Split $10.00 among three people.</h2>
+      <p>Alex pays a $10.00 shared expense. Alex, Bo, and Casey all share it equally. For this example, their saved participant order is Alex, Bo, then Casey, and this is the ledger’s only expense.</p>
+
+      <h3>1. Save the expense and its participants.</h3>
+      <p>Create a ledger in USD, add the three people, then enter the expense with Alex as the payer. Select all three as participants in this expense. Each ledger uses one currency; OweDone does not convert currencies.</p>
+
+      <h3>2. Keep the extra cent accounted for.</h3>
+      <p>1,000 cents divided by three gives 333 cents each and one cent left over. OweDone assigns that cent to the first person in the saved participant order: Alex in this example. The order determines the remainder, not who paid.</p>
+      <table class="example-table" aria-describedby="balance-note-en">
+        <caption>One $10.00 expense, paid by Alex · USD</caption>
+        <thead><tr><th scope="col">Person</th><th scope="col">Share</th><th scope="col">Balance</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Alex</th><td>$3.34</td><td>+$6.66</td></tr>
+          <tr><th scope="row">Bo</th><td>$3.33</td><td>−$3.33</td></tr>
+          <tr><th scope="row">Casey</th><td>$3.33</td><td>−$3.33</td></tr>
+        </tbody>
+        <tfoot><tr><th scope="row">Total</th><td>$10.00</td><td>$0.00</td></tr></tfoot>
+      </table>
+      <p id="balance-note-en">A positive balance is money to receive; a negative balance is money to pay. Alex paid $10.00 and owes a $3.34 share, leaving $6.66 to receive. The saved shares add up to the original expense exactly.</p>
+
+      <h3>3. Read and share the settlement plan.</h3>
+      <ul>
+        <li>Bo pays Alex $3.33.</li>
+        <li>Casey pays Alex $3.33.</li>
+      </ul>
+      <p>OweDone shows these transfers as a plan. It does not connect to a bank, send money, or confirm that a payment happened. Use the ledger’s share action to open a text summary in the iOS share sheet, then choose the app and recipient yourself.</p>
+      <p class="note">Sharing sends a summary, not a live shared ledger. Changes remain on your iPhone, so share an updated summary when the plan changes.</p>
+
+      <h3>When plans change</h3>
+      <p>You can edit expenses and restore deleted expenses or ledgers from Recently Deleted. OweDone does not erase those items automatically. Removing the app removes its local app data, subject to your device backup settings.</p>
+      <p>OweDone supports English and Korean on iPhone with iOS 17 or later. App Store availability is pending.</p>
+      <p><a href="index.html">Read support answers</a> · <a href="#korean" lang="ko">한국어로 읽기</a></p>
+    </article>
+
+    <article class="document guide-copy" id="korean" lang="ko" aria-labelledby="korean-title">
+      <p class="kicker">분할 예시 / KRW</p>
+      <h2 id="korean-title">세 사람이 10,000원을 나누면?</h2>
+      <p>민수가 공동 비용 10,000원을 먼저 냈고, 민수·보라·지수가 똑같이 나눠 부담한다고 가정해 볼게요. 저장된 참여자 순서는 민수, 보라, 지수이고, 원장에는 이 비용 하나만 있습니다. 위의 달러 예시와는 별개의 원화 예시입니다.</p>
+
+      <h3>1. 비용과 참여자를 저장하세요.</h3>
+      <p>통화가 KRW인 원장을 만들고 세 사람을 추가하세요. 비용 10,000원과 결제자 민수를 입력하고, 이 비용을 나눌 참여자로 세 사람 모두를 선택하세요. 원장 하나에는 통화 하나만 사용하며 환율 계산이나 환전은 하지 않습니다.</p>
+
+      <h3>2. 나머지 1원까지 정확하게 나눕니다.</h3>
+      <p>10,000원을 셋으로 나누면 3,333원씩에 1원이 남습니다. OweDone은 저장된 참여자 순서에 따라 나머지를 배분하므로 이 예시에서는 민수가 1원을 더 부담합니다. 결제자가 누구인지가 아니라 저장된 순서가 기준입니다.</p>
+      <table class="example-table" aria-describedby="balance-note-ko">
+        <caption>민수가 결제한 비용 10,000원 하나 · KRW</caption>
+        <thead><tr><th scope="col">참여자</th><th scope="col">분담액</th><th scope="col">잔액</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">민수</th><td>3,334원</td><td>+6,666원</td></tr>
+          <tr><th scope="row">보라</th><td>3,333원</td><td>−3,333원</td></tr>
+          <tr><th scope="row">지수</th><td>3,333원</td><td>−3,333원</td></tr>
+        </tbody>
+        <tfoot><tr><th scope="row">합계</th><td>10,000원</td><td>0원</td></tr></tfoot>
+      </table>
+      <p id="balance-note-ko">양수 잔액은 받을 돈, 음수 잔액은 보낼 돈입니다. 민수는 10,000원을 냈고 본인 분담액은 3,334원이므로 6,666원을 받아야 합니다. 저장된 분담액의 합계는 원래 비용과 정확히 일치합니다.</p>
+
+      <h3>3. 정산 계획을 확인하고 공유하세요.</h3>
+      <ul>
+        <li>보라가 민수에게 3,333원을 보냅니다.</li>
+        <li>지수가 민수에게 3,333원을 보냅니다.</li>
+      </ul>
+      <p>앱은 이 내용을 정산 계획으로 보여 줍니다. 은행에 연결하거나 돈을 보내거나 실제 입금 여부를 확인하지는 않습니다. 원장의 공유 기능을 사용하면 텍스트 요약이 iOS 공유 시트에 열립니다. 보낼 앱과 수신자는 직접 선택하세요.</p>
+      <p class="note">공유하는 것은 요약문이며 실시간 공동 원장이 아닙니다. 수정한 내용은 본인의 iPhone에 남으므로 정산 계획이 바뀌면 새 요약을 공유하세요.</p>
+
+      <h3>수정하거나 삭제한 내용을 되돌릴 때</h3>
+      <p>비용을 수정할 수 있고, 삭제한 비용이나 원장은 최근 삭제된 항목에서 복원할 수 있습니다. 이 항목들은 자동으로 지워지지 않습니다. 앱을 삭제하면 로컬 앱 데이터도 제거되며, 기기 백업에 남는 사본은 사용자의 백업 설정에 따릅니다.</p>
+      <p>OweDone은 iOS 17 이상 iPhone에서 영어와 한국어를 지원합니다. 현재 App Store 출시를 준비하고 있습니다.</p>
+      <p><a href="index.html#korean">한국어 지원 안내</a> · <a href="#english" lang="en">Read in English</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>OweDone by ongsim</p>
+    <p><a href="privacy.html">Privacy Policy</a> · <a href="mailto:ppupy1200@gmail.com?subject=OweDone%20Support">ppupy1200@gmail.com</a></p>
+  </footer>
+</body>
+</html>
