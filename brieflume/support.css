@@ -1,0 +1,29 @@
+/* Extends the existing, locally hosted Pages document style. */
+body { min-width: 0; }
+.hero, .hero.hero--document { min-height: 0; padding-block: 3.5rem; }
+h1 { max-width: 18ch; font-size: clamp(2.6rem, 8vw, 5rem); }
+.document { padding-block: 3rem; }
+.section-heading { margin-bottom: 2rem; }
+.section-heading h2 { font-size: clamp(2rem, 5vw, 3rem); }
+.answers div { gap: 1.5rem 3rem; padding-block: 1.6rem; }
+.answers dt { font-size: clamp(1.3rem, 3vw, 1.7rem); }
+.answers dd p:first-child { margin-top: 0; }
+.answers dd p:last-child { margin-bottom: 0; }
+.status { border-left: 3px solid var(--color-accent); padding-left: 1rem; max-width: 48rem; }
+.contact { margin-top: 2rem; padding: 1.5rem; background: var(--color-paper-subtle); }
+.contact h3 { margin-top: 0; }
+.contact p:last-child { margin-bottom: 0; }
+.skip { position: absolute; top: -5rem; left: 1rem; padding: .8rem; background: var(--color-paper); z-index: 1; }
+.skip:focus { top: 1rem; }
+.legal-copy { padding-block: 1rem 3rem; }
+.legal-copy h2 { font-size: 1.7rem; line-height: 1.2; }
+.legal-copy h3 { font-size: 1.15rem; margin-block: 1.8rem .5rem; }
+.legal-copy ul { padding-left: 1.3rem; color: var(--color-muted); }
+.legal-copy li + li { margin-top: .5rem; }
+nav, footer { flex-wrap: wrap; }
+nav a { white-space: normal; }
+nav a, footer a { padding-block: .35rem; }
+p, dd, li, a { overflow-wrap: anywhere; }
+[lang="ko"] { word-break: keep-all; overflow-wrap: anywhere; }
+section[id] { scroll-margin-top: 1rem; }
+@media (max-width: 42rem) { .hero, .hero.hero--document { padding-block: 2.5rem; } .answers div { grid-template-columns: minmax(0, 1fr); gap: .8rem; } }
