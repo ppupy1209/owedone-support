@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Siftory</title>
+  <rect width="64" height="64" fill="#f3f7fc"/>
+  <path fill="#0a121e" fill-rule="evenodd" d="M8 14h48v36H8V14Zm3 3v30h12V17H11Zm15 0v30h12V17H26Zm15 0v30h12V17H41Z"/>
+  <path fill="#1c3dcf" d="M26 45h12v3H26z"/>
+</svg>
