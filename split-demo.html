@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Try an exact expense split · OweDone web demo</title><meta name="description" content="Try splitting 10,000 KRW among three people. An English and Korean browser demo explains equal shares and remaining won or cents.">
+<link rel="canonical" href="https://ppupy1209.github.io/owedone-support/split-demo.html"><meta property="og:type" content="website"><meta property="og:title" content="Try an exact expense split · OweDone web demo"><meta property="og:url" content="https://ppupy1209.github.io/owedone-support/split-demo.html">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="split-demo.css"><script src="split-demo-core.js" defer></script><script src="split-demo.js" defer></script></head><body>
+<header class="site-header"><a class="wordmark" href="index.html">OweDone</a><nav aria-label="Support navigation"><a href="expense-split-guide.html">Split guide</a><a href="privacy.html">Privacy</a></nav></header>
+<main><section class="hero demo-hero"><p class="kicker">EXACT SHARES · WEB DEMO</p><h1>Where does the extra won go?</h1><p class="lede">Try one equal split in your browser before exploring OweDone for iPhone.</p><p class="language-links"><a href="#en">English</a> · <a href="#ko" lang="ko">한국어 계산 시연</a></p></section>
+<noscript><p>This calculator needs JavaScript. Read the <a href="expense-split-guide.html">worked examples</a> instead. <span lang="ko">계산에는 JavaScript가 필요합니다. <a href="expense-split-guide.html#korean">한국어 예시</a>를 읽어 보세요.</span></p></noscript>
+<section class="calculator" data-calculator id="en" lang="en" aria-labelledby="title-en">
+<p class="kicker">TRY BEFORE INSTALLING · WEB DEMO</p><h2 id="title-en">Split 10,000 KRW among three people.</h2><p>Change the amount and group size to see where the extra won goes. Person 1, 2, 3 represents the app’s saved participant order.</p>
+<p id="hint-en">This web demo calculates one equal split only. Use 1–12 people, whole KRW or USD with up to two decimal places; omit commas and currency symbols. Changing currency resets to a separate example, not a currency conversion.</p>
+<div class="demo-fields">
+<label for="currency-en">Currency<select id="currency-en" data-currency aria-describedby="hint-en"><option value="KRW">KRW · won</option><option value="USD">USD · dollars</option></select></label>
+<label for="amount-en">Total amount<input id="amount-en" data-amount type="text" inputmode="decimal" maxlength="12" value="10000" autocomplete="off" aria-describedby="hint-en error-en"></label>
+<label for="count-en">People<input id="count-en" data-count type="text" inputmode="numeric" maxlength="2" value="3" autocomplete="off" aria-describedby="hint-en error-en"></label>
+</div><button type="button">Show the split</button><p class="demo-error" id="error-en" data-error role="alert"></p>
+<p data-summary role="status" aria-live="polite" aria-atomic="true"></p>
+<div class="demo-result" data-result hidden><h3>Your split</h3><table class="example-table"><caption>Equal shares in the displayed order</caption><thead><tr><th scope="col">Person</th><th scope="col">Share</th></tr></thead><tbody></tbody><tfoot><tr><th scope="row">Total</th><td data-total></td></tr></tfoot></table></div>
+<p>Remainders follow the saved participant order, one minor currency unit at a time, regardless of who paid. In the iPhone app you can save ledgers and multiple expenses, then see balances and a settlement plan.</p>
+<p class="note">Calculations stay in this browser. Inputs are not sent or saved; there is no tracking, form submission, money transfer or app-data connection. Loading the page contacts the hosting service; App Store links open Apple’s site.</p>
+<p class="demo-links"><a href="expense-split-guide.html#english">Read the app’s balance and settlement example</a><br><a href="https://apps.apple.com/us/app/id6807867772">View OweDone on the US App Store</a></p>
+</section>
+<section class="calculator" data-calculator id="ko" lang="ko" aria-labelledby="title-ko">
+<p class="kicker">설치 전 웹 계산 시연</p><h2 id="title-ko">10,000원을 세 사람이 나누면?</h2><p>금액과 인원을 바꿔 나머지 1원이 어디에 배분되는지 확인하세요. 표시된 참여자 1, 2, 3 순서는 앱의 저장된 참여자 순서를 나타냅니다.</p>
+<p id="hint-ko">이 웹 시연은 균등 분할 한 건만 계산합니다. 인원 1~12명, KRW 정수 또는 USD 소수점 둘째 자리까지이며 쉼표·통화 기호 없이 입력하세요. 통화를 바꾸면 별개의 예시 금액으로 초기화하며 환전하지 않습니다.</p>
+<div class="demo-fields">
+<label for="currency-ko">통화<select id="currency-ko" data-currency aria-describedby="hint-ko"><option value="KRW">KRW · 원</option><option value="USD">USD · 달러</option></select></label>
+<label for="amount-ko">총금액<input id="amount-ko" data-amount type="text" inputmode="decimal" maxlength="12" value="10000" autocomplete="off" aria-describedby="hint-ko error-ko"></label>
+<label for="count-ko">인원<input id="count-ko" data-count type="text" inputmode="numeric" maxlength="2" value="3" autocomplete="off" aria-describedby="hint-ko error-ko"></label>
+</div><button type="button">나눠 보기</button><p class="demo-error" id="error-ko" data-error role="alert"></p>
+<p data-summary role="status" aria-live="polite" aria-atomic="true"></p>
+<div class="demo-result" data-result hidden><h3>계산 결과</h3><table class="example-table"><caption>표시된 순서로 균등 분담</caption><thead><tr><th scope="col">참여자</th><th scope="col">분담액</th></tr></thead><tbody></tbody><tfoot><tr><th scope="row">합계</th><td data-total></td></tr></tfoot></table></div>
+<p>나머지는 결제자와 관계없이 저장된 참여자 순서에 따라 최소 통화 단위로 배분됩니다. 실제 앱에서는 원장과 여러 비용을 저장하고 잔액·정산 계획을 확인할 수 있습니다.</p>
+<p class="note">계산은 이 브라우저 안에서만 처리합니다. 입력을 전송하거나 저장하지 않으며, 추적·폼 전송·송금·앱 데이터 연동은 없습니다. 페이지를 불러올 때는 호스팅 서버에 접속하며, App Store 링크를 누르면 Apple 사이트로 이동합니다.</p>
+<p class="demo-links"><a href="expense-split-guide.html#korean">앱의 잔액·정산 예시 읽기</a><br><a href="https://apps.apple.com/kr/app/id6807867772">한국 App Store에서 OweDone 보기</a></p>
+</section></main><footer><p>OweDone by ongsim</p><p><a href="index.html">Support</a> · <a href="privacy.html">Privacy</a></p></footer></body></html>

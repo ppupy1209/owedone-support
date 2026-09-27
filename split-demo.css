@@ -1,0 +1,16 @@
+.demo-hero { min-height: auto; padding-block: 3.5rem; }
+.demo-hero h1 { max-width: 18ch; font-size: clamp(2.7rem, 7vw, 5.5rem); }
+.calculator { padding-block: 3rem; max-width: 48rem; }
+.calculator h2 { font-size: clamp(2rem, 5vw, 3.3rem); }
+.demo-fields { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 1rem; margin-block: 1.5rem; }
+.demo-fields label { display: block; font-weight: 700; }
+.demo-fields input, .demo-fields select { width: 100%; min-height: 3rem; margin-top: .4rem; padding: .6rem; font: inherit; border: 1px solid var(--color-muted); border-radius: .2rem; color: var(--color-ink); background: white; }
+.calculator button { padding: .85rem 1.2rem; color: white; background: var(--color-ink); border: 2px solid var(--color-ink); font: inherit; font-weight: 700; cursor: pointer; }
+.calculator :is(input, select, button):focus-visible { outline: 3px solid var(--color-accent); outline-offset: 4px; }
+.calculator [aria-invalid="true"] { border: 2px solid var(--color-accent); }
+.demo-error { color: #a3210c; font-weight: 700; }
+.demo-result { margin-top: 1.5rem; padding: 1.2rem; background: #fffaf2; border: 1px solid var(--color-rule); }
+.demo-result[hidden] { display: none; }
+.demo-result h3 { margin-top: 0; }
+.demo-links { line-height: 2; }
+@media (max-width: 40rem) { .demo-fields { grid-template-columns: 1fr; } .demo-result { padding: .75rem; } }
