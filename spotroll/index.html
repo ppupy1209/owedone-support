@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spotroll Support</title>
+<meta name="description" content="Help for Spotroll, an iPhone spot light meter for film photography with a notebook for every roll.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><div><h1>Spotroll</h1><nav><a href="privacy.html">Privacy Policy</a> · <a href="#ja">日本語</a> · <a href="#de">Deutsch</a> · <a href="#ko">한국어</a></nav></div></header>
+<section>
+<h2>What it does</h2>
+<p>Spotroll uses your iPhone camera as a reflected-light spot meter for film photography. It turns the exposure the camera chooses into EV and suggests aperture, shutter speed or ISO for your film, with zones, averaging, reciprocity correction for long exposures, ND filters and a bellows factor. The meter is free. Spotroll Pro, a one-time purchase, adds a notebook for your rolls, CSV/JSON export and exposure details written into copies of your scans.</p>
+<h2>How to use</h2>
+<ol>
+<li><strong>Meter</strong>: allow camera access, then tap the part of the scene you want to meter. “Region” lets you drag a rectangle and read its average. The lock button locks the exposure; the pause button holds the number on screen.</li>
+<li><strong>Settings for your camera</strong>: choose A (aperture priority), S (shutter priority), ISO or M (manual with a needle) and step the dials. Settings › Meter sets 1/3, 1/2 or full stops and your lens’s widest and smallest aperture.</li>
+<li><strong>Several readings</strong>: tap Add to save up to 9 readings (for example shadow, subject and highlight). Then choose Average, Zone (place the selected reading on a zone from 0 to X) or Fit range. The zone scale shows where each reading falls.</li>
+<li><strong>Film and long exposures</strong>: tap the film button to choose one of 18 presets, a custom exponent or no film. Long exposures show the corrected time or aperture with its basis (datasheet, interpolated, extrapolated or derived). Filters adds ND and bellows factors.</li>
+<li><strong>Calibration</strong>: Settings › Calibration. Meter a grey card with Spotroll and with a meter you trust, enter what your meter shows and add the comparison. Two grey-card comparisons are enough for an offset.</li>
+<li><strong>Night</strong>: Settings › Red night mode turns the whole screen red.</li>
+<li><strong>Rolls (Pro)</strong>: load a roll, then tap Log frame on the meter to save the current exposure as the next frame. Open a roll to edit frames, export CSV and JSON, or choose “Add details to scans…” to write date, exposure, lens, camera, film, notes and (if you include it) location into new copies of the scans you pick.</li>
+</ol>
+<h2>About accuracy</h2>
+<p>Spotroll reads the exposure your iPhone camera chooses. It is a phone camera meter, not a calibrated handheld meter: phones and their exposure targets differ, a tap meters an area rather than a 1° spot, and very dark or bright scenes can reach the camera’s limits (the app says so). Compare it once with a handheld meter you trust and set the calibration offset. Treat readings as a guide, bracket important frames, and do not use Spotroll as a substitute for a calibrated meter in critical work.</p>
+<h2>Questions</h2>
+<h3>The preview is black or the camera does not start</h3>
+<p>Check Settings › Privacy &amp; Security › Camera › Spotroll. If another app or a phone call is using the camera, the status says the camera is paused; it restarts when the camera is free again.</p>
+<h3>Where do the reciprocity numbers come from?</h3>
+<p>From the manufacturers’ published datasheets: ILFORD/HARMAN “Film Reciprocity Failure Compensation” (Dec 2023); Kodak publications F-4017, F-4016, F-4043 and E-4050; Fujifilm data sheets AF3-0258E and AF3-0221E2. Between printed times Spotroll interpolates, and beyond the last printed time it extrapolates and shows a “test your film” warning. Spotroll is not affiliated with these manufacturers; film names are trademarks of their owners.</p>
+<h3>Are my scans changed?</h3>
+<p>No. Spotroll only sees the photos you choose in the photo picker and writes new copies with the details. You can save or share the copies, or add them to Photos as new photos.</p>
+<h3>How do I restore Pro on a new iPhone?</h3>
+<p>Open the Pro screen (Rolls tab or Settings › Spotroll Pro) and tap Restore Purchases while signed in with the same Apple Account. Pro can be shared with Family Sharing.</p>
+<h3>Which devices are supported?</h3>
+<p>iPhone with iOS 17 or later.</p>
+<h2>Contact</h2>
+<p><a href="mailto:ppupy1200@gmail.com?subject=Spotroll">ppupy1200@gmail.com</a></p>
+</section>
+
+<section id="ja" lang="ja">
+<h2>日本語</h2>
+<p>Spotrollは、iPhoneのカメラをフィルム写真用の反射光式スポット露出計として使うアプリです。カメラが選んだ露出をEVに換算し、絞り・シャッター速度・ISOを提案します。ゾーン、平均、長時間露光の相反則不軌補正、NDフィルター、蛇腹倍率にも対応します。露出計は無料で、買い切りのSpotroll Proでロールのノート、CSV/JSON書き出し、スキャンのコピーへの撮影情報の書き込みが使えます。</p>
+<ul>
+<li><strong>測光</strong>：カメラへのアクセスを許可し、測りたい部分をタップします。「範囲」では四角を描いて平均を測れます。</li>
+<li><strong>複数の測光値</strong>：最大9点を保存し、平均、ゾーン配置、範囲に合わせるを選べます。</li>
+<li><strong>フィルムと長時間露光</strong>：プリセット18種から選ぶと、補正後の時間や絞りが根拠（データシート・補間・外挿・換算）とともに表示されます。</li>
+<li><strong>精度</strong>：スマートフォンのカメラによる測光で、校正された単体露出計ではありません。信頼できる露出計と一度比べてキャリブレーションを設定し、大切なコマは段階露光してください。露出が重要な撮影では校正済みの露出計の代わりにしないでください。</li>
+<li><strong>データの出典</strong>：ILFORD/HARMAN（2023年12月）、Kodak F-4017・F-4016・F-4043・E-4050、Fujifilm AF3-0258E・AF3-0221E2。各メーカーとは提携していません。</li>
+<li><strong>Proの復元</strong>：Pro画面の「購入を復元」を、同じApple Accountで実行してください。</li>
+</ul>
+<p>お問い合わせ：<a href="mailto:ppupy1200@gmail.com?subject=Spotroll">ppupy1200@gmail.com</a></p>
+</section>
+
+<section id="de" lang="de">
+<h2>Deutsch</h2>
+<p>Spotroll nutzt die Kamera deines iPhone als Spot-Belichtungsmesser (Objektmessung) für die Analogfotografie. Die von der Kamera gewählte Belichtung wird in EV umgerechnet und als Blende, Zeit oder ISO für deinen Film vorgeschlagen, mit Zonen, Mittelwert, Schwarzschild-Korrektur, ND-Filtern und Balgenfaktor. Der Belichtungsmesser ist kostenlos; Spotroll Pro (Einmalkauf) ergänzt Filmnotizen, CSV/JSON-Export und Belichtungsdaten in Kopien deiner Scans.</p>
+<ul>
+<li><strong>Messen</strong>: Kamerazugriff erlauben und die gewünschte Stelle antippen. „Bereich“ misst den Mittelwert eines gezogenen Rechtecks.</li>
+<li><strong>Mehrere Messwerte</strong>: bis zu 9 speichern, dann mitteln, auf eine Zone legen oder den Umfang einpassen.</li>
+<li><strong>Genauigkeit</strong>: Spotroll misst mit einer Handykamera und ist kein kalibrierter Handbelichtungsmesser. Vergleiche es einmal mit einem Belichtungsmesser, dem du vertraust, stelle die Kalibrierung ein und mache bei wichtigen Bildern eine Belichtungsreihe. Bei kritischen Aufnahmen kein Ersatz für einen kalibrierten Belichtungsmesser.</li>
+<li><strong>Datenquellen</strong>: ILFORD/HARMAN (Dez. 2023), Kodak F-4017, F-4016, F-4043, E-4050, Fujifilm AF3-0258E, AF3-0221E2. Keine Verbindung zu den Herstellern.</li>
+<li><strong>Pro wiederherstellen</strong>: im Pro-Bildschirm „Käufe wiederherstellen“ mit demselben Apple Account tippen.</li>
+</ul>
+<p>Kontakt: <a href="mailto:ppupy1200@gmail.com?subject=Spotroll">ppupy1200@gmail.com</a></p>
+</section>
+
+<section id="ko" lang="ko">
+<h2>한국어</h2>
+<p>Spotroll은 iPhone 카메라를 필름 사진용 반사광 스팟 노출계로 쓰는 앱입니다. 카메라가 고른 노출을 EV로 바꿔 필름에 맞는 조리개·셔터 속도·ISO를 제안하고, 존·평균·장노출 상반칙 불궤 보정·ND 필터·벨로스 배수를 지원합니다. 노출계는 무료이며, 1회 구매인 Spotroll Pro로 롤 노트, CSV/JSON 내보내기, 스캔 사본에 촬영 정보 쓰기를 쓸 수 있습니다.</p>
+<ul>
+<li><strong>측광</strong>: 카메라 접근을 허용하고 재고 싶은 곳을 탭합니다. ‘영역’은 사각형을 그려 평균을 잽니다.</li>
+<li><strong>여러 측광값</strong>: 최대 9개를 저장해 평균, 존 배치, 범위 맞춤을 고를 수 있습니다.</li>
+<li><strong>정확도</strong>: 휴대폰 카메라로 재는 측광이며 보정된 단독 노출계가 아닙니다. 믿을 수 있는 노출계와 한 번 비교해 보정값을 맞추고, 중요한 컷은 브라케팅하세요. 노출이 중요한 작업에서는 보정된 노출계 대신 쓰지 마세요.</li>
+<li><strong>데이터 출처</strong>: ILFORD/HARMAN(2023년 12월), Kodak F-4017·F-4016·F-4043·E-4050, Fujifilm AF3-0258E·AF3-0221E2. 각 제조사와 제휴하지 않았습니다.</li>
+<li><strong>Pro 복원</strong>: Pro 화면에서 같은 Apple 계정으로 ‘구매 복원’을 누르세요.</li>
+</ul>
+<p>문의: <a href="mailto:ppupy1200@gmail.com?subject=Spotroll">ppupy1200@gmail.com</a></p>
+</section>
+<footer>Spotroll by ongsim · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
