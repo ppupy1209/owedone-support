@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PressureLine Support</title>
+<meta name="description" content="Help for PressureLine, an iPhone barometer chart with the Apple Weather pressure forecast on the same line.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><div><h1>PressureLine</h1><nav><a href="privacy.html">Privacy Policy</a> · <a href="#ja">日本語</a> · <a href="#ko">한국어</a></nav></div></header>
+<section>
+<h2>What it does</h2>
+<p>PressureLine charts the air pressure measured by your iPhone’s own barometer and draws the Apple Weather hourly forecast for the next 72 hours on the same chart. It shows the change over the past 3 hours (measured) and the next 3 and 6 hours (forecast), can alert you when the pressure falls fast, and has Home Screen and Lock Screen widgets. Paid download, no in-app purchases, no ads, no account.</p>
+<h2>How to use</h2>
+<ol>
+<li><strong>First launch</strong>: tap Continue, then allow Location While Using (for the forecast) and Motion &amp; Fitness (to read the barometer).</li>
+<li><strong>Main screen</strong>: the solid line is your iPhone, the dashed line is the Apple Weather forecast, and shaded periods are where the forecast falls by your alert amount or more in 3 hours. Switch between 1, 3 and 7 days above the chart. Pull down to refresh.</li>
+<li><strong>Units and reference</strong>: Settings › Display. Units hPa, inHg, mmHg or kPa. “Sea level” matches weather reports and the forecast; “At my location” is the raw pressure at your height.</li>
+<li><strong>Elevation</strong>: Settings › Elevation. Automatic uses GPS altitude only when it is accurate to 20 m and changes only after a move of about 40 m. You can also enter it by hand, or use the estimate from Apple Weather.</li>
+<li><strong>Alerts</strong>: Settings › Alerts. Turn on Rapid drop alerts, choose a fall of 1 to 8 hPa in 3 hours (3 hPa by default) and allow notifications. Forecast heads-ups are scheduled about an hour before the forecast shows a fall that large.</li>
+<li><strong>Widgets</strong>: touch and hold the Home Screen or Lock Screen, tap Edit › Add Widget and choose PressureLine. Small: latest reading and 3-hour trend. Medium: chart with the forecast. Lock Screen: circular, rectangular and inline.</li>
+<li><strong>Your data</strong>: Settings › Data. Export CSV, or Delete all readings (this also removes the cached forecast and the saved location and elevation).</li>
+</ol>
+<h2>Questions</h2>
+<h3>Why are there gaps in my line?</h3>
+<p>iOS does not let apps read the barometer continuously in the background. PressureLine reads it about once a second while open and stores a reading every 10 minutes. When the app is closed it asks iOS for short background refreshes, and widgets try to take a reading, but iOS decides if and when that happens (less often for apps you rarely open, never after you force-quit the app or with Background App Refresh or Low Power Mode off). Gaps are drawn as gaps; nothing is filled in.</p>
+<h3>My reading and the forecast are a few hPa apart</h3>
+<p>Your iPhone measures the pressure at its own height. To compare it with the sea-level forecast, PressureLine needs your elevation; a steady offset usually means the elevation is off. PressureLine converts with the standard atmosphere, while weather services use real temperatures, so at higher places the two lines can sit a little apart. The 24-hour comparison on the main screen shows the difference.</p>
+<h3>There is no forecast line</h3>
+<p>The forecast needs Location access (Settings › Privacy &amp; Security › Location Services › PressureLine › While Using the App) and a network connection. If your elevation is not known yet, readings are shown as pressure at your location and the forecast line is hidden until you set your elevation.</p>
+<h3>Alerts came late or not at all</h3>
+<p>Forecast heads-ups are scheduled in advance and do not need the app to run, but they are only as good as the latest forecast. Alerts from your own readings can only fire when a reading is taken, which in the background depends on iOS. Check that notifications are allowed for PressureLine.</p>
+<h3>How often is the forecast refreshed?</h3>
+<p>Automatically at most every 3 hours, at most every 30 minutes when you pull down, and right after you move about 25 km, up to 8 times a day. Widgets never request a forecast themselves.</p>
+<h3>Which devices are supported?</h3>
+<p>iPhone with iOS 17 or later. PressureLine shows air pressure; it is a weather tool, not a medical device.</p>
+<h2>Weather data</h2>
+<p>Forecast data: Apple Weather. <a href="https://developer.apple.com/weatherkit/data-source-attribution/">Weather data sources and legal attribution</a>.</p>
+<h2>Contact</h2>
+<p><a href="mailto:ppupy1200@gmail.com?subject=PressureLine">ppupy1200@gmail.com</a></p>
+</section>
+
+<section id="ja" lang="ja">
+<h2>日本語</h2>
+<p>PressureLineは、iPhone内蔵の気圧計で測った気圧と、Apple Weatherの72時間先までの1時間ごとの予報を1つのグラフに重ねて表示するアプリです。過去3時間（実測）と今後3時間・6時間（予報）の変化量を表示し、急な下降を通知できます。ホーム画面・ロック画面のウィジェットもあります。買い切りで、App内課金・広告・アカウントはありません。</p>
+<ul>
+<li><strong>初回起動</strong>：「続ける」をタップし、位置情報（予報のため、使用中のみ）とモーションとフィットネス（気圧計の読み取りのため）を許可します。</li>
+<li><strong>グラフ</strong>：実線があなたのiPhone、点線がApple Weatherの予報です。色の付いた時間帯は、予報で3時間に設定値以上の下降がある時間帯です。</li>
+<li><strong>単位と基準</strong>：設定 › 表示で、hPa・inHg・mmHg・kPa、海面気圧または現地気圧を選べます。</li>
+<li><strong>標高</strong>：自動（GPSの精度が20 m以内のときのみ）、手入力、またはApple Weatherからの推定。</li>
+<li><strong>通知</strong>：設定 › 通知で「急な下降の通知」をオンにし、3時間で1〜8 hPaのしきい値を選びます。</li>
+<li><strong>線が途切れる理由</strong>：iOSでは、アプリがバックグラウンドで気圧計を常に読み取ることはできません。短いバックグラウンド更新やウィジェットの読み取りを実行するかどうかとそのタイミングはiOSが決めます。</li>
+<li><strong>予報との差</strong>：標高の設定がずれていると、一定の差が出ます。高い場所では、標準大気で換算するため少し差が出ることがあります。</li>
+</ul>
+<p>予報データ：Apple Weather（<a href="https://developer.apple.com/weatherkit/data-source-attribution/">気象データの提供元</a>）。お問い合わせ：<a href="mailto:ppupy1200@gmail.com?subject=PressureLine">ppupy1200@gmail.com</a></p>
+</section>
+
+<section id="ko" lang="ko">
+<h2>한국어</h2>
+<p>PressureLine은 iPhone에 내장된 기압계로 잰 기압과 Apple Weather의 72시간 시간별 예보를 하나의 그래프에 겹쳐 보여 주는 앱입니다. 지난 3시간(실측)과 앞으로 3시간·6시간(예보)의 변화량을 보여 주고, 기압이 빠르게 떨어지면 알림을 보낼 수 있습니다. 홈 화면·잠금 화면 위젯도 있습니다. 한 번 구입하면 되며 앱 내 구입·광고·계정이 없습니다.</p>
+<ul>
+<li><strong>처음 실행</strong>: ‘계속’을 누르고 위치(예보용, 앱을 사용하는 동안)와 동작 및 피트니스(기압계 측정용)를 허용합니다.</li>
+<li><strong>그래프</strong>: 실선은 내 iPhone, 점선은 Apple Weather 예보입니다. 색칠된 구간은 예보상 3시간에 설정한 값 이상 떨어지는 구간입니다.</li>
+<li><strong>단위와 기준</strong>: 설정 › 표시에서 hPa·inHg·mmHg·kPa, 해면기압 또는 현지기압을 고릅니다.</li>
+<li><strong>고도</strong>: 자동(GPS 정확도 20 m 이내일 때만), 직접 입력, 또는 Apple Weather 기반 추정.</li>
+<li><strong>알림</strong>: 설정 › 알림에서 ‘급하강 알림’을 켜고 3시간에 1~8 hPa 기준을 고릅니다.</li>
+<li><strong>선이 끊기는 이유</strong>: iOS는 앱이 백그라운드에서 기압계를 계속 읽도록 허용하지 않습니다. 짧은 백그라운드 새로 고침과 위젯 측정의 실행 여부와 시점은 iOS가 정합니다.</li>
+<li><strong>예보와 차이가 날 때</strong>: 고도 설정이 맞지 않으면 일정한 차이가 납니다. 높은 곳에서는 표준대기로 환산하기 때문에 조금 차이가 날 수 있습니다.</li>
+</ul>
+<p>예보 데이터: Apple Weather(<a href="https://developer.apple.com/weatherkit/data-source-attribution/">기상 데이터 출처</a>). 문의: <a href="mailto:ppupy1200@gmail.com?subject=PressureLine">ppupy1200@gmail.com</a></p>
+</section>
+<footer>PressureLine by ongsim · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
