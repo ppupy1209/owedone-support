@@ -20,16 +20,16 @@
 <li><strong>Presets</strong>: Logo, Sticker, Line art and Photo poster set sensible starting values. Every slider stays adjustable.</li>
 <li><strong>Color or black &amp; white</strong>: choose 2–32 colors, or a black-and-white trace with an automatic (or manual) threshold. Invert traces the light parts.</li>
 <li><strong>Shape</strong>: Smoothness goes from sharp corners (polygon) to soft curves. Ignore specks removes regions smaller than the given number of pixels. Simplify curves merges neighboring curve pieces to reduce nodes. Reduce grain softens noise in photos and scans before colors are reduced. Detail sets the working resolution (800, 1200 or 2000 px).</li>
-<li><strong>Layers</strong>: Stacked draws every color over the ones below it, so there are no gaps (best for print and screens). Cut-out makes colors that never overlap, each piece cut out of its neighbors (best for vinyl, one sheet per color). Remove background leaves out the color that fills the image border.</li>
+<li><strong>Layers</strong>: Stacked draws every color over the ones below it, so there are no gaps (best for print and screens). Cut-out makes colors that never overlap, each piece cut out of its neighbors (best for vinyl, one sheet per color). Remove background leaves out the color that fills the image border. Where two colors touch, both use exactly the same edge (it is traced once), so cut-out pieces fit together without overlaps or slivers.</li>
 <li><strong>Numbers</strong>: colors, paths, nodes and match. Match is the share of pixels of the vector, drawn again, that have the same color as the reduced image. Turn on Show nodes and outlines to inspect the curves.</li>
 <li><strong>Export</strong>: SVG, PNG, PDF or DXF, with the width in millimetres, inches or pixels (the height follows the picture). Styles: filled, outlines, or both. The file is checked before you can save it; if nothing would be drawn (for example everything was removed as background), Pathsmith tells you why instead of writing an empty file.</li>
 </ol>
 <h2>Cutting machines and lasers</h2>
 <ul>
-<li><strong>Vinyl cutting</strong>: cut-out layers, outlines only, pieces under 1&nbsp;mm² removed, and a weeding box 5&nbsp;mm around the design.</li>
+<li><strong>Vinyl cutting</strong>: cut-out layers, outlines only, pieces under 1&nbsp;mm² removed, and a weeding box 5&nbsp;mm around the design. Each color is a separate sheet, so every piece keeps its full closed outline; the edge two colors share is the same line on both sheets, so the pieces line up exactly.</li>
 <li><strong>Print, then cut (sticker)</strong>: filled colors for printing plus a smooth cut line 3&nbsp;mm outside the artwork.</li>
-<li><strong>Laser and engraving</strong>: thin outlines, pieces under 0.5&nbsp;mm² removed. With several colors in Stacked layers, an edge shared by two colors can appear in both layers; cut one layer at a time or delete duplicates in your laser software.</li>
-<li>SVG files use one group per color with real units. DXF files (R12 entities, widely supported) contain closed polylines, one layer per color, in millimetres or inches, with the y axis pointing up. Curves are turned into points within 0.05&nbsp;mm, which keeps the number of points low.</li>
+<li><strong>Laser and engraving</strong>: thin outlines for one sheet, pieces under 0.5&nbsp;mm² removed. Every edge is cut exactly once: an edge shared by two colors is written once, in the layer of the color on top, so nothing is cut twice. The result is the same with Stacked or Cut-out layers. Where edges of different colors meet, an outline continues in another layer, so some paths are open lines rather than closed shapes.</li>
+<li>SVG files use one group per color with real units. DXF files (R12 entities, widely supported) contain closed polylines (open ones for the laser preset’s shared edges), one layer per color, in millimetres or inches, with the y axis pointing up. Curves are turned into points within 0.05&nbsp;mm, which keeps the number of points low.</li>
 </ul>
 <h2>Free and Pro</h2>
 <ul>
