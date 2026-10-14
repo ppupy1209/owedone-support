@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="여행 숙소비처럼 똑같이 나누면 안 되는 비용을 2:1:1 같은 몫으로 나누는 방법. 아이폰 정산 앱 OweDone 실제 화면과 계산 예시.">
+  <title>여행비를 2:1:1로 나누는 법 · OweDone 안내</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://ppupy1209.github.io/owedone-support/share-split-guide.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ppupy1209.github.io/owedone-support/share-split-guide.html">
+  <meta property="og:title" content="여행비를 2:1:1로 나누는 법 · OweDone 안내">
+  <meta property="og:description" content="똑같이 나누면 안 되는 비용을 몫으로 나누는 방법과 실제 계산 예시.">
+  <meta property="og:image" content="https://ppupy1209.github.io/owedone-support/media/shares/detail-shares-ko.jpg">
+  <meta name="apple-itunes-app" content="app-id=6807867772">
+  <style>
+    .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:24px 0}
+    .shots figure{margin:0}
+    .shots img{width:100%;height:auto;border-radius:18px;border:1px solid rgba(0,0,0,.12)}
+    .shots figcaption{font-size:.9em;margin-top:6px}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="OweDone support home">OweDone</a>
+    <nav aria-label="Support navigation">
+      <a href="index.html">Support</a>
+      <a href="expense-split-guide.html">Split guide</a>
+      <a aria-current="page" href="share-split-guide.html">몫으로 나누기</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero--document" aria-labelledby="guide-title">
+      <p class="kicker">SHARED EXPENSES / 02</p>
+      <h1 id="guide-title">똑같이 나누면 안 되는 돈, 몫으로 나누기</h1>
+      <p class="lede">큰 방을 쓴 사람, 늦게 합류한 사람, 술을 안 마신 사람. 1/n이 맞지 않는 비용을 2:1:1처럼 몫으로 나누는 방법입니다.</p>
+      <p class="language-links"><a href="#korean">한국어</a> · <a href="#english" lang="en">English example</a></p>
+    </section>
+
+    <article class="document guide-copy" id="korean" aria-labelledby="korean-title">
+      <p class="note">이 글은 OweDone을 만든 개발자(ongsim)가 직접 쓴 안내입니다. 화면은 개발 중 Simulator에서 찍은 실제 앱 화면이고, 이름은 예시입니다.</p>
+
+      <p class="kicker">예시 / KRW</p>
+      <h2 id="korean-title">숙소비 90,000원, 민수는 큰 방을 혼자 썼다면?</h2>
+      <p>세 사람이 1박 숙소비 90,000원을 냈습니다. 결제는 민수가 했고, 민수는 2인실을 혼자 쓰고 지영·현우는 작은 방을 함께 썼습니다. 그래서 민수 2몫, 지영 1몫, 현우 1몫으로 나누기로 했습니다.</p>
+
+      <h3>1. 비용을 추가하고 ‘몫으로’를 고르세요.</h3>
+      <p>비용 화면의 나누는 방식에서 <strong>똑같이 · 직접 입력 · 몫으로</strong> 중 ‘몫으로’를 고르고, 사람마다 +/− 단추로 몫을 정합니다. 몫이 0인 사람은 이 비용에서 빠집니다. 저장하기 전에 아래 ‘배분 미리보기’에서 사람별 금액을 바로 확인할 수 있습니다.</p>
+
+      <h3>2. 계산은 이렇게 됩니다.</h3>
+      <table class="example-table">
+        <caption>숙소 90,000원 · 민수 결제 · 2:1:1</caption>
+        <thead><tr><th scope="col">사람</th><th scope="col">몫</th><th scope="col">부담액</th><th scope="col">잔액</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">민수</th><td>2</td><td>45,000원</td><td>+45,000원</td></tr>
+          <tr><th scope="row">지영</th><td>1</td><td>22,500원</td><td>−22,500원</td></tr>
+          <tr><th scope="row">현우</th><td>1</td><td>22,500원</td><td>−22,500원</td></tr>
+        </tbody>
+        <tfoot><tr><th scope="row">합계</th><td>4</td><td>90,000원</td><td>0원</td></tr></tfoot>
+      </table>
+      <p>각자 ‘총액 × 내 몫 ÷ 전체 몫’을 내림해 받고, 딱 나누어떨어지지 않아 남는 최소 단위(원·센트)는 나머지가 큰 사람부터, 같으면 저장된 그룹 순서대로 배분합니다. 그래서 저장된 금액의 합은 언제나 원래 비용과 정확히 같습니다.</p>
+
+      <div class="shots">
+        <figure><img src="media/shares/editor-shares-ko.jpg" alt="OweDone 새 비용 화면: 나누는 방식 몫으로, 민수 2 지영 1 현우 1, 배분 미리보기 민수 45,000원 지영 22,500원 현우 22,500원" width="460" height="1000" loading="lazy"><figcaption>몫을 정하면 저장 전에 배분이 보입니다.</figcaption></figure>
+        <figure><img src="media/shares/detail-shares-ko.jpg" alt="OweDone 비용 상세 화면: 숙소 90,000원, 몫으로 나눔 2:1:1, 배분 내역과 계산 근거" width="460" height="1000" loading="lazy"><figcaption>저장 뒤에도 몫과 계산 근거가 남습니다.</figcaption></figure>
+      </div>
+
+      <h3>3. 금액이 정해져 있으면 ‘직접 입력’</h3>
+      <p>메뉴별로 각자 먹은 금액이 영수증에 찍혀 있다면 ‘직접 입력’으로 사람마다 금액을 넣으세요. 입력한 금액의 합이 비용 총액과 맞아야 저장됩니다.</p>
+
+      <h3>무엇이 무료이고 무엇이 유료인가요?</h3>
+      <p>OweDone은 10월 13일 1.1.0부터 무료로 받을 수 있습니다. 장부 만들기, 똑같이 나누기, 잔액·정산 순서 보기, 정산 요약 공유, 삭제 복원은 모두 무료입니다. 이 글의 <strong>몫으로 나누기·직접 입력</strong>만 한 번 구입하는 평생 이용권이 필요하고, 구독이나 광고는 없습니다. 이용권 없이도 이미 저장한 비용은 보기·수정·삭제할 수 있습니다. 예전에 유료 앱으로 구입하신 분은 추가 결제 없이 모두 쓸 수 있습니다.</p>
+      <p class="note">OweDone은 정산 금액을 계산할 뿐, 송금하거나 은행 계좌에 연결하지 않습니다. 장부 하나에는 통화 하나만 쓰며 환율 변환은 하지 않습니다.</p>
+
+      <p><a href="https://apps.apple.com/kr/app/owedone-%EB%8D%94%EC%B9%98%ED%8E%98%EC%9D%B4-%EC%A0%95%EC%82%B0/id6807867772?uo=4">한국 App Store에서 OweDone 보기</a> · <a href="expense-split-guide.html#korean">똑같이 나누기(1원 단위) 예시</a> · <a href="split-demo.html#ko">설치 전 웹 계산 시연</a></p>
+    </article>
+
+    <article class="document guide-copy" id="english" lang="en" aria-labelledby="english-title">
+      <p class="kicker">EXAMPLE / USD</p>
+      <h2 id="english-title">Split a $10.01 taxi 2:1:1.</h2>
+      <p>Alice paid $10.01 and rode the longest, so the group splits it 2:1:1 between Alice, Bob and Chris. Each person gets the total × their shares ÷ all shares, rounded down: $5.00, $2.50 and $2.50. The leftover cent goes to the largest remainder first, so Alice’s share is $5.01. The saved amounts add up to $10.01 exactly.</p>
+      <div class="shots">
+        <figure><img src="media/shares/editor-shares-en.jpg" alt="OweDone new expense screen with split by shares selected" width="460" height="1000" loading="lazy"><figcaption>Choose “By shares” and set each person’s shares.</figcaption></figure>
+        <figure><img src="media/shares/detail-shares-en.jpg" alt="OweDone expense details: Taxi $10.01 split 2:1:1, Alice $5.01, Bob $2.50, Chris $2.50" width="460" height="1000" loading="lazy"><figcaption>The saved allocation and its calculation.</figcaption></figure>
+      </div>
+      <p>OweDone is a free download from version 1.1.0. Ledgers, equal splits, balances, settlement plans, sharing and restore are free. Splitting by shares or exact amounts is a one-time lifetime unlock with no subscription or ads. <a href="https://apps.apple.com/us/app/owedone-split-expenses/id6807867772?uo=4">View on the App Store (US)</a>.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>OweDone by ongsim · <a href="site-map.html">App support and guides</a></p>
+    <p><a href="privacy.html">Privacy Policy</a> · <a href="mailto:ppupy1200@gmail.com?subject=OweDone%20Support">ppupy1200@gmail.com</a></p>
+  </footer>
+</body>
+</html>
